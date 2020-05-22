@@ -1,0 +1,74 @@
+%%
+%% Copyright (C) 2020 by Manuel Werder
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%
+%%     http://www.latex-project.org/lppl.txt
+%%
+%! Date = 13.05.20
+
+\secStyle{Einleitung}
+\label{einleitung}
+\setcounter{page}{1}
+\normalsize
+some text...
+
+\subSecStyle{Vorgaben}
+Diese werden wie folgt aufgelistet:
+\begin{itemize}
+    \item one
+\end{itemize}
+
+
+\subSecStyle{Modulidentifikation}
+Die Handlungsziele gemäss Modulidentifikation:
+
+\begin{enumerate}
+    \item one
+\end{enumerate}
+
+
+\subSecStyle{Projektübersicht}
+Es werden hier die wichtigsten Projekttools die wie Beteiligten aufgezeigt.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{0.8\textwidth} {
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X | }
+        \hline
+        \sffamily Student und Projektleiter & \sffamily  Manuel Werder \\
+        \hline
+%        \sffamily Dozent & \sffamily Daniel Senften  \\
+%        \hline
+    \end{tabularx}
+    \caption{\sffamily Projektbeteiligte}
+    \label{tab:1}
+\end{table}
+
+\begin{table}[h!]
+    \centering
+    \begin{tabularx}{0.8\textwidth} {
+    | >{\raggedright\arraybackslash}X
+    | >{\raggedright\arraybackslash}X | }
+%        \hline
+%        \LaTeX & \sffamily \href{https://www.overleaf.com}{Overleaf} \\
+%        \hline
+%        \sffamily IDE & \sffamily \href{https://developer.android.comu}{Android Studio} \\
+%        \hline
+%        \sffamily GitHub & \sffamily \href{https://github.com/SetManu/SpaceWar}{Space War}  \\
+%        \hline
+%        \sffamily Draw IO & \sffamily \href{https://drawio-app.com/}{Draw IO}  \\
+%        \hline
+%        \sffamily Google Play Game Service & \sffamily \href{https://developers.google.com/games/services}{Google Play Game Service}  \\
+%        \hline
+    \end{tabularx}
+    \caption{\sffamily Tools, Software und Services}
+    \label{tab:2}
+\end{table}
+
+\figureStyle{width=0.25\textwidth}{GameScreen}{Game Screen}{fig:gameScreen}\newline
+

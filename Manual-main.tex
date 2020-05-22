@@ -1,0 +1,57 @@
+%%
+%% Copyright (C) 2020 by Manuel Werder
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%
+%%     http://www.latex-project.org/lppl.txt
+%%
+%! Date = 12.05.20
+
+% Preamble
+\documentclass[11pt]{./styles/manual}
+%\usepackage[utf8]{inputenc}
+
+% Document
+\begin{document}
+    \sffamily
+
+    \input{./chapters/TitlePage}
+
+    \pagestyle{plain}
+    \fancyhf{}
+
+    \tableofcontents
+
+    \newpage
+
+    \input{./chapters/HeaderFooter}
+
+    \input{./chapters/Einleitung.tex}
+
+    \input{./chapters/Konzepte.tex}
+
+    \input{./chapters/Realisierung.tex}
+
+    \input{./chapters/Problemstellungen.tex}
+
+    \input{./chapters/Reflexion.tex}
+
+    \input{./chapters/SSE.tex}
+
+%    \newpage
+
+    \addcontentsline{toc}{section}{\listtablename}
+    \listoftables
+
+    \addcontentsline{toc}{section}{\listfigurename}
+    \listoffigures
+
+    \printbibliography[
+    heading=bibintoc,
+    title={Quellenverzeichnis}
+    ]~\nocite{*}
+
+\end{document}

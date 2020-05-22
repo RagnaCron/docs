@@ -1,0 +1,86 @@
+%%
+%% Copyright (C) 2020 by Manuel Werder
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%
+%%     http://www.latex-project.org/lppl.txt
+%%
+%! Date = 15.05.20
+
+\secStyle{Problemstellungen}
+\label{problemstellung}
+In diesem Kapitel werden diverse Problemstellungen betrachtet, die während des Projekts aufgetreten sind.
+
+\subSecStyle{Aufsetzen von \LaTeX}
+Die Form, die gewällt wurde für die Dokumentation, ist nicht Vorgabe für die LB,
+aber sie bedarf doch einer schriftlichen Erwähnung, da es mein erstes Projekt ist,
+bei der \LaTeX zur Anwendung kommt. Was aber nicht heisst das wir keine Dokumentation schreiben
+müssen, ganz im Gegenteil, es gehört zur ÜK 335 eine entsprechende Dokumentation
+zum Projekt zu erstellen.\newline\newline
+Das Installieren von \LaTeX~ist nicht einfach, ich musste hierfür gleich zweimal antreten.
+Beim zweiten Anlauf für die Installation hat es dann auch funktioniert.
+Die Webseite \href{https://www.overleaf.com}{Overleaf} hat mir sehr geholfen mich mit
+den ersten Konzepten vertraut zu machen, obwohl ich klar sagen muss, das ich sehr viel
+Zeit dafür aufwenden musste, dass ich überhaupt jetzt eine Dokument habe an dem ich auch
+gerne arbeite, da ich doch gewisse Ansprüche an Style und Aussehen habe. Es gibt aber
+noch viel zu lernen und man kann auch noch sehr viel an diesem Dokument verbessern.
+
+\subSubSecStyle{\LaTeX~und die Bibliographie}
+Um ein Quellenverzeichnis zu machen, so wie ich das kenne, muss man so einiges Einstellen und
+dann auch noch am richtigen Ort aufrufen. Das Ganze war nicht ganz einfach, aber zu guter Letzt
+hat es dann auch funktioniert. Wo ich wirklich Schwierigkeiten hatte war das Hinzufügen vom
+Tabellen- Abbild und Quellenverzeichnis in das Inhaltsverzeichnis.
+
+\subSecStyle{Google-Play-Game-Services}
+\label{googlePlayGame}
+"Wo soll man da nun anfangen?"\newline\newline
+Aller Anfang ist meistens schwer, nur dieser war auch noch unübersichtlich.
+Wer die "Errungenschaften" wie auch die "Bestenliste" von Google Play Game Services verwenden will,
+muss zuerst mal einen autorisierten Account bei Google Play Console haben. (Der Spass kostet einmalig 25\textdollar.)
+Wenn man den Account hat, geht es weiter mit dem Erstellen eines Gameservice.
+Dieser Gameservice muss dann spezifisch mit dem Packetnamen der man der Applikation entnimmt, verknüpft werden.
+Was dann auch noch gemacht werden muss ist einen OAuth 2.0 Authentifizierung
+durchzuführen mit seinem Projekt. Da man den Key benötigt, um die Applikation zu verknüpfen.
+Und bis dahin hat man den Dienst noch nicht einmal verwendet. Was noch wichtig ist,
+man muss auch noch entsprechende "Bestenlisten" und "Errungenschaften" erstellen,
+sonst hat man das ja wirklich umsonst gemacht. Was auch noch wesentlich ist das man das App "Play Games"
+von Google herunterlädt und einen Account erstellt.\newline\newline
+Nun denn, wie man sieht ist das für ein erstes man nicht gerade einfach, besonders
+dann nicht, wenn man in einem offiziellen Tutorial, dass einem pro gefühltem
+Subkapitel in ein anders Tutorial führt, um dann irgend wann auch noch fertig zu werden mit dem Ersten Tutorial.
+Ich habe die Verknüpfung aufgebaut und einen Account auf "Play Games" erstellt,
+was jetzt noch fehlt ist das eigentliche Testen.
+
+\subSecStyle{Game-Overlay}
+\label{game-overlay}
+"Wie legt man ein Overlay an für eine SurfaceView an?"\newline\newline
+Wie auch in der reinen Java Entwicklung, ergibt sich in Android, dass es nicht ganz einfach
+ist ein Spiel zu programmieren. Sich eine Übersicht über die Möglichkeiten zu verschaffen bedarf
+Zeit und Ausdauer. Ein Overlay an zu wenden auf eine SurfaceView bedingt, dass man sie in eine
+Gruppe einbindet und so dann eigentlich übergibt, um sie darstellen zu lassen. Bis ich verstanden
+habe wie ich die Events entsprechend weiterleiten muss an die GameView Klasse hat es einen Moment
+gebraucht, da ich zuerst den Ansatz verfolgt habe mit der Methode onMotionEvent zu arbeiten,
+bis ich bemerkt habe, dass so das Game Play merklich darunter leidet. Ich habe mich dann eben
+entschieden ein Overlay zu kreieren das Buttons hat, um so die Interaktion mit dem Benutzer zu
+gewährleisten.
+
+\subSecStyle{Sound Pool}
+Als ich den ersten Effekt eingebunden hatte in Spiel, war ich schon sehr froh, es war
+auch das erste Mal, dass ich effektiv Musik und Geräusche in einem Programm verwendet
+habe. Aber beim Hinzufügen von multiplen Effekten, kam es dann zu merkwürdigen Exceptiones,
+die zu kryptisch wahren, um sie einfach so zu verstehen, was aber wesentlich war, ist das man
+es auch gehört hat. Ich habe dann Online ein wenig recherchiert und habe einen Artikel dazu
+gefunden der mir auch noch bei weiteren Bugs und Problemen geholfen hat.
+
+\subSecStyle{SettingsScreen}
+Die Implementierung von SettingScreen kann man wirklich als trivial bezeichnen, aber bei der Einbindung
+ist es dann zu einem Bug gekommen und ich musste da improvisieren. Leider konnte ich nicht für
+alle drei Sounds den SoundPool verwenden und musste deswegen für den Hintergrundsound auf
+den MediaPlayer ausweichen. Ich weiss nicht an was es gelegen hat, aber es hat immer nur die ersten
+5 -10 Sekunden abgespielt bis er dann wieder von frone angefangen hat. Man kann diesen Fix aber nicht
+als eine permanente Lösung anschauen, da es das Gesamtbild des Singetons zerstört, wenn man es liest.
+
+

@@ -1,0 +1,14 @@
+/.idea
+*.toc
+*.aux
+*.lot
+*.out
+*.pdf
+*.log
+*.lof
+*.bcf
+*.run.xml
+*.bbl
+*.blg
+*.tex.bbl
+*.tex.blg

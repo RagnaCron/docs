@@ -1,0 +1,41 @@
+%%
+%% Copyright (C) 2020 by Manuel Werder
+%%
+%% This work may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%
+%%     http://www.latex-project.org/lppl.txt
+%%
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{setmanu-styles}
+
+\RequirePackage[german]{babel}
+\selectlanguage{german}
+
+\RequirePackage{fontspec}
+
+\RequirePackage[german]{fancyref}
+
+%\RequirePackage{tikz}
+%\RequirePackage{tikz-uml}
+%\RequirePackage{tikz-qtree}
+
+\RequirePackage{gitinfo2}
+\RequirePackage{gitexinfo}
+\newcommand{\gitStyler}{Release\gitRels: \gitBranch{} (\gitAuthorDate)}
+
+\newcommand{\secStyle}[1]{\section{\sffamily #1}}
+\newcommand{\subSecStyle}[1]{\subsection{\sffamily #1}}
+\newcommand{\subSubSecStyle}[1]{\subsubsection{\sffamily #1}}
+
+\newcommand{\figureStyle}[4]{
+\begin{figure}[!ht]
+    \begin{center}
+        \includegraphics[#1]{#2}
+        \caption{#3}
+        \label{#4}
+    \end{center}
+\end{figure}
+}
