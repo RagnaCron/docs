@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
-biber Manual-main
+if [ ! -d ./build ]
+then
+  mkdir -v build
+pwd
+fi
 
-xelatex Manual-main.tex
+xelatex -output-directory=./build ./Manual-main.tex
+biber --output-directory ./build ./Manual-main
+xelatex -output-directory=./build ./Manual-main.tex

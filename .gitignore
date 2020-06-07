@@ -12,3 +12,4 @@
 *.blg
 *.tex.bbl
 *.tex.blg
+/build
