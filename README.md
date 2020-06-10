@@ -15,7 +15,7 @@ as I am still laking fundamental knowledge of LaTeX this may take some time.
 
 ### Possible font problem
 A fue option to fix this if needed, is to install these fonts, delete some set instructions
-in the manual.cls file that define the usage of these fonts or use your own.\
+in the manual.cls file that define the usage of these fonts or use your own.
 
 For your convenience if you want to install them: \
 https://fonts.google.com/specimen/Ubuntu?query=Ubuntu \
