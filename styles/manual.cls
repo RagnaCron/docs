@@ -23,8 +23,8 @@
 \LoadClass{article}
 
 % Packages
-\RequirePackage[top=2.6cm,bottom=2cm,left=2cm,right=2cm,a4paper]{geometry}
-\RequirePackage[utf8]{inputenc}
+\RequirePackage[top=2.6cm,bottom=2cm,left=2cm,right=2cm,a4paper,driver=xetex]{geometry}
+%\RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
 \RequirePackage{bookmark}
 \RequirePackage{csquotes}
@@ -43,13 +43,14 @@ filecolor=magenta,
 urlcolor=blue,
 }
 
-\RequirePackage{todonotes}
+%\RequirePackage{todonotes}
 \RequirePackage{tabularx}
 \RequirePackage{fancyhdr}
 \fancypagestyle{plain}{%
-  \fancyhead{} % get rid of headers
-  \fancyfoot{} % get rid of footers
-  \renewcommand{\headrulewidth}{0pt} % and the line
+\fancyhead{} % get rid of headers
+\fancyfoot{} % get rid of footers
+\renewcommand{\headheight}{13.6pt}
+\renewcommand{\headrulewidth}{0pt} % and the line
 }
 
 %\RequirePackage{wrapfig}
