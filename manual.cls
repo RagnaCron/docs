@@ -22,6 +22,8 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+% Packages
+
 \RequirePackage{hyperref}
 \hypersetup{
 colorlinks=true,
@@ -30,10 +32,25 @@ filecolor=magenta,
 urlcolor=blue,
 }
 
-% Packages
 \RequirePackage[top=2.6cm,bottom=2cm,left=2cm,right=2cm,a4paper,driver=xetex]{geometry}
 %\RequirePackage[utf8]{inputenc}
 \RequirePackage[T1]{fontenc}
+\RequirePackage{fontspec}
+\setromanfont[
+BoldFont=Ubuntu-B.ttf,
+ItalicFont=Ubuntu-RI.ttf,
+BoldItalicFont=Ubuntu-BI.ttf,
+]{Ubuntu-R.ttf}
+\setsansfont[
+BoldFont=Ubuntu-B.ttf,
+ItalicFont=Ubuntu-RI.ttf,
+BoldItalicFont=Ubuntu-BI.ttf,
+]{Ubuntu-R.ttf}
+\setmonofont[
+BoldFont=UbuntuMono-B.ttf,
+ItalicFont=UbuntuMono-RI.ttf,
+BoldItalicFont=UbuntuMono-BI.ttf,
+]{UbuntuMono-R.ttf}
 \RequirePackage{bookmark}
 \RequirePackage{csquotes}
 \RequirePackage[
@@ -42,8 +59,6 @@ style=alphabetic,
 sorting=ynt
 ]{biblatex}
 \addbibresource{./chapters/ListOfScources.bib}
-
-
 
 %\RequirePackage{todonotes}
 \RequirePackage{tabularx}
