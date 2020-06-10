@@ -22,6 +22,14 @@
 \ProcessOptions\relax
 \LoadClass{article}
 
+\RequirePackage{hyperref}
+\hypersetup{
+colorlinks=true,
+linkcolor=black,
+filecolor=magenta,
+urlcolor=blue,
+}
+
 % Packages
 \RequirePackage[top=2.6cm,bottom=2cm,left=2cm,right=2cm,a4paper,driver=xetex]{geometry}
 %\RequirePackage[utf8]{inputenc}
@@ -35,13 +43,7 @@ sorting=ynt
 ]{biblatex}
 \addbibresource{./chapters/ListOfScources.bib}
 
-\RequirePackage{hyperref}
-\hypersetup{
-colorlinks=true,
-linkcolor=black,
-filecolor=magenta,
-urlcolor=blue,
-}
+
 
 %\RequirePackage{todonotes}
 \RequirePackage{tabularx}
@@ -58,6 +60,6 @@ urlcolor=blue,
 \RequirePackage{graphicx}
 \graphicspath{{./images/}}
 
-\RequirePackage{./styles/setmanu-styles}
+\RequirePackage{setmanu-styles}
 
 \endinput
