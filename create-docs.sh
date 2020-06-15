@@ -6,6 +6,8 @@ then
 pwd
 fi
 
+#xelatex -output-directory=./build ./main-beamer.tex
+
 xelatex -output-directory=./build ./main-manual.tex
 biber --output-directory ./build ./main-manual
 xelatex -output-directory=./build ./main-manual.tex

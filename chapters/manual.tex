@@ -9,16 +9,15 @@
 %%     http://www.latex-project.org/lppl.txt
 %%
 %! Date = 13.05.20
+\mode*
 
-\secStyle{Einleitung}
-\label{einleitung}
-\setcounter{page}{1}
-\normalsize
+\secStyle{Einleitung}\label{sec:einleitung}
+\mode<article>{\setcounter{page}{1}}
 some text...
 \vSpaceStyle{}
 some text
 
-\subSecStyle{Vorgaben}
+\subSecStyle{Vorgaben}\label{subsec:vorgaben}
 Diese werden wie folgt aufgelistet:
 
 \begin{itemize}
@@ -26,7 +25,7 @@ Diese werden wie folgt aufgelistet:
 \end{itemize}
 
 
-\subSecStyle{Modulidentifikation}
+\subSecStyle{Modulidentifikation}\label{subsec:modulid}
 Die Handlungsziele gemäss Modulidentifikation:
 
 \begin{enumerate}
@@ -34,7 +33,7 @@ Die Handlungsziele gemäss Modulidentifikation:
 \end{enumerate}
 
 
-\subSecStyle{Projektübersicht}
+\subSecStyle{Projektübersicht}\label{subsec:projekt}
 Es werden hier die wichtigsten Projekttools die wie Beteiligten aufgezeigt.
 
 \begin{table}[h!]
@@ -67,12 +66,12 @@ Es werden hier die wichtigsten Projekttools die wie Beteiligten aufgezeigt.
 
 
 
-\secStyle{Konzepte}\label{konzepte}
+\secStyle{Konzepte}\label{sec:konzepte}
 %\figureStyle{width=0.25\textwidth}{GameScreen}{Game Screen}{fig:GameScreen}
 
 
 
-\secStyle{Selbstständigkeitserklärung}
+\secStyle{Selbstständigkeitserklärung}\label{sec:ssk}
 Hiermit erkläre ich, dass dieses Dokument selbstständig verfasst wurde, dass alle Angaben korrekt
 und überprüft sind und entsprechend korrekt referenziert wird.
 \vSpaceStyle{}

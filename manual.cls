@@ -24,6 +24,9 @@
 
 % Packages
 
+\RequirePackage{beamerarticle}
+%\RequirePackage{caption}
+
 \RequirePackage{hyperref}
 \hypersetup{
 colorlinks=true,

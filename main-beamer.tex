@@ -21,19 +21,44 @@ urlcolor    = blue,
 \subtitle{Subtitle}
 
 \date{\gitAuthorDate}
-\author{\href{\gitAuthorEmail}{Manuel Werder}}
+\author{\href{mailto:\gitAuthorEmail}{\gitAuthorName}}
 \institute{CSBE\\
 \vfill\color{gray}\tiny\sffamily$[$git$]$\gitStyler}
 %\titlegraphic{\hfill\includegraphics[height=1.5cm]{logo.pdf}}
 
 % ----------------------------------
 
-% Packages
-\usepackage{amsmath}
-
 % Document
 \begin{document}
 
+    \maketitle
 
+    % Theme "metropolis" supports 4 different titleformats
+    %   frame=regular
+    %   frame=smallcaps
+    %   frame=allsmallcaps
+    %   frame=allcaps
+    \metroset{titleformat frame=smallcaps}
+
+    % In Abhängigkeit vom Umfang der einzelnen Kapitel werden diese
+    % so (pro Seite) gruppiert, dass jede Seite jeweils einen kompletten
+    % Schulungstag abdeckt.
+    %
+    % Dies kann mit folgender Option erreicht werden.
+    %
+    %     \tableofcontents[sections={1-5}]
+
+    \begin{frame}{Inhaltsverzeichnis}
+        \centering
+        \setbeamertemplate{section in toc}[sections numbered]
+        \begin{minipage}[t]{0.5\textwidth}
+            \tableofcontents[hideallsubsections,sections={1-3}]
+        \end{minipage}
+        \begin{minipage}[t]{0.4\textwidth}
+            \tableofcontents[hideallsubsections,sections={4-6}]
+        \end{minipage}
+    \end{frame}
+
+    \input{./chapters/manual.tex}
 
 \end{document}
