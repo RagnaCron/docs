@@ -6,6 +6,6 @@ then
 pwd
 fi
 
-xelatex -output-directory=./build ./Manual-main.tex
-biber --output-directory ./build ./Manual-main
-xelatex -output-directory=./build ./Manual-main.tex
+xelatex -output-directory=./build ./main-manual.tex
+biber --output-directory ./build ./main-manual
+xelatex -output-directory=./build ./main-manual.tex
