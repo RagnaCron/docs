@@ -31,7 +31,7 @@
 \newcommand{\subSubSecStyle}[1]{\subsubsection{#1}}
 
 \RequirePackage{xifthen}
-\newcommand{\vSpaceStyle}[1]{\ifthenelse{\isempty{#1}}{\vspace{11pt}\\}{\vspace{#1}\\}}
+\newcommand{\vSpaceStyle}[1]{\ifthenelse{\isempty{#1}}{\vspace{1em}\\}{\vspace{#1}\\}}
 
 \newcommand{\figureStyle}[4]{
 \begin{figure}[!ht]
@@ -42,3 +42,8 @@
     \end{center}
 \end{figure}
 }
+
+\parskip1em
+\parindent0em
+
+\endinput

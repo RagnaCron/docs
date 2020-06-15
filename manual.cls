@@ -25,7 +25,7 @@
 % Packages
 
 \RequirePackage{beamerarticle}
-%\RequirePackage{caption}
+\RequirePackage{caption}
 
 \RequirePackage{hyperref}
 \hypersetup{

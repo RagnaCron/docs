@@ -11,68 +11,101 @@
 %! Date = 13.05.20
 \mode*
 
-\secStyle{Einleitung}\label{sec:einleitung}
+\section{Einleitung}
+\label{sec:einleitung}
 \mode<article>{\setcounter{page}{1}}
-some text...
-\vSpaceStyle{}
-some text
 
-\subSecStyle{Vorgaben}\label{subsec:vorgaben}
+\begin{frame}[fragile]
+    \frametitle<presentation>{Einleitung}
+    some text\ldots
+    \mode<article>{\vSpaceStyle{}}
+    some more text
+\end{frame}
+
+
+\subsection{Vorgaben}
+\label{subsec:vorgaben}
 Diese werden wie folgt aufgelistet:
+\begin{frame}[fragile]
+    \frametitle<presentation>{Voragaben}
 
-\begin{itemize}
-    \item one
-\end{itemize}
+    \begin{itemize}
+        \item one
+        \item two three
+    \end{itemize}
+\end{frame}
 
 
-\subSecStyle{Modulidentifikation}\label{subsec:modulid}
+\subsection{Modulidentifikation}
+\label{subsec:modulid}
 Die Handlungsziele gemäss Modulidentifikation:
+\begin{frame}[fragile]
+    \frametitle<presentation>{Modulidentifikation}
+    \begin{enumerate}
+        \item one
+        \item two
+    \end{enumerate}
+\end{frame}
 
-\begin{enumerate}
-    \item one
-\end{enumerate}
 
+\subsection{Projektübersicht}\label{subsec:projekt}
+\begin{frame}[fragile]
+    \frametitle<presentation>{Projektübersicht}
+    Es werden hier die wichtigsten Projekttools wie die Beteiligten aufgezeigt.
+\end{frame}
 
-\subSecStyle{Projektübersicht}\label{subsec:projekt}
-Es werden hier die wichtigsten Projekttools die wie Beteiligten aufgezeigt.
-
-\begin{table}[h!]
-    \centering
-    \begin{tabularx}{0.8\textwidth} {
-    | >{\raggedright\arraybackslash}X
-    | >{\raggedright\arraybackslash}X | }
-        \hline
-        Student und Projektleiter & Manuel Werder \\
-        \hline
+\begin{frame}[fragile]
+    \frametitle<presentation>{Beteiligte}
+    \begin{table}[h!]
+        \centering
+        \begin{tabularx}{0.8\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X | }
+            \hline
+            Student und Projektleiter & Manuel Werder \\
+            \hline
 %        Dozent & \sffamily   \\
 %        \hline
-    \end{tabularx}
-    \caption{Projektbeteiligte}
-    \label{tab:1}
-\end{table}
+        \end{tabularx}
+        \caption{Projektbeteiligte}
+        \label{tab:1}
+    \end{table}
+\end{frame}
 
-\begin{table}[h!]
-    \centering
-    \begin{tabularx}{0.8\textwidth} {
-    | >{\raggedright\arraybackslash}X
-    | >{\raggedright\arraybackslash}X | }
-        \hline
-        \LaTeX & \href{https://www.overleaf.com}{Overleaf} \\
-        \hline
-    \end{tabularx}
-    \caption{Tools, Software und Services}
-    \label{tab:2}
-\end{table}
+\begin{frame}[fragile]
+    \frametitle<presentation>{Software, Tools und Services}
+    \begin{table}[h!]
+        \centering
+        \begin{tabularx}{0.8\textwidth} {
+        | >{\raggedright\arraybackslash}X
+        | >{\raggedright\arraybackslash}X | }
+            \hline
+            \LaTeX & \href{https://www.overleaf.com}{Overleaf} \\
+            \hline
+        \end{tabularx}
+        \caption{Software, Tools und Services}
+        \label{tab:2}
+    \end{table}
+\end{frame}
 
 
 
-\secStyle{Konzepte}\label{sec:konzepte}
+\section{Konzepte}\label{sec:konzepte}
+\begin{frame}[fragile]
+    \frametitle<presentation>{Konzepte}
+    Deine Konzepte\ldots
+\end{frame}
 %\figureStyle{width=0.25\textwidth}{GameScreen}{Game Screen}{fig:GameScreen}
 
 
 
-\secStyle{Selbstständigkeitserklärung}\label{sec:ssk}
-Hiermit erkläre ich, dass dieses Dokument selbstständig verfasst wurde, dass alle Angaben korrekt
-und überprüft sind und entsprechend korrekt referenziert wird.
-\vSpaceStyle{}
-\gitAuthorDate~\gitAuthorName
+\section{Selbstständigkeitserklärung}\label{sec:ssk}
+\begin{frame}[fragile]
+    \frametitle<presentation>{Selbstständigkeitserklärung}
+    Hiermit erkläre ich, dass dieses Dokument selbstständig verfasst wurde, dass alle Angaben
+    überprüft und entsprechend korrekt referenziert sind.
+    \mode<article>{\vSpaceStyle{}}
+    \gitAuthorDate~\gitAuthorName
+\end{frame}
+
+
